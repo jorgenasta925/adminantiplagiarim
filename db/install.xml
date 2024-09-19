@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="local/adminantiplagiarim/db" VERSION="20240330" COMMENT="XMLDB file for Moodle local/adminantiplagiarim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="local_adminantiplag_perfiles" COMMENT="Default comment for local_adminantiplag_perfiles, please edit me">
+      <FIELDS>
+	   <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="name" TYPE="text" LENGTH="50" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="configuration" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="description" TYPE="text" LENGTH="200" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="state" TYPE="int" LENGTH="2" NOTNULL="false" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <!-- <TABLE NAME="local_adminantiplag_audit" COMMENT="Default comment for local_adminantiplag_audit, please edit me">
+      <FIELDS>
+	   <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="userid" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="event" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="previoustate" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="newstate" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="date" TYPE="datetime" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="autor" TYPE="text" LENGTH="20" NOTNULL="false" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE> -->
+
+  </TABLES>
+</XMLDB>
